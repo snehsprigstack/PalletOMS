@@ -1,0 +1,6 @@
+.outer {
+  width: 650px !important;
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+}

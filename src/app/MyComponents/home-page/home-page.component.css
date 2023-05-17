@@ -1,14 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-body {
-  font-family: "poppins" !important;
-}
 .container {
   border-radius: 5px;
   position: relative;
   top: 100px;
-}
-.setdiv {
-  margin: 0 auto;
 }
 .outer {
   width: 900px;
@@ -17,6 +10,7 @@ body {
 .panel {
   box-shadow: 0px 2px 20px 0px #0000001a;
   border-radius: 5px;
+  width: auto;
 }
 .panel-heading {
   text-align: center;
@@ -41,15 +35,13 @@ body {
   color: #1b3468;
 }
 .btn-Login {
-  width: 310px;
+  width: 200px;
   height: 40px;
   background-color: #1b3468;
   color: white;
   border-radius: 5px;
-  margin-left: 4px;
   border: none;
 }
-.setcenter {
-  display: flex;
-  justify-content: center;
+body {
+  color: #1b3468;
 }
