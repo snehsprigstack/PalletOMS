@@ -3,20 +3,19 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SyncDataService {
-  url = 'https://localhost:7185/api/Module'
-  syncUrl = 'https://localhost:7185/api/SyncStatus/GetSyncStatus?UID='
-  constructor(private http:HttpClient) { }
-  getSyncData(id: any):Observable<any>{
-    return this.http.get(`${this.url}?UserID=${id}`)
+  url = 'https://localhost:7185/api/Module';
+  syncUrl = 'https://localhost:7185/api/SyncStatus/GetSyncStatus?UID=';
+  constructor(private http: HttpClient) {}
+  getSyncData(id: any): Observable<any> {
+    return this.http.get(`${this.url}?UserID=${id}`);
   }
-  syncStatus(Uid:any):Observable<any>{
-    return this.http.get(`${this.syncUrl}${Uid}`)
+  syncStatus(Uid: any): Observable<any> {
+    return this.http.get(`${this.syncUrl}${Uid}`);
   }
-  saveSyncStatus(data: any,Id:any):Observable<any>{
-    console.log(data)
-    return this.http.post(`${this.url}?UserID=${Id}`,data)
+  saveSyncStatus(data: any, Id: any): Observable<any> {
+    return this.http.post(`${this.url}?UserID=${Id}`, data);
   }
 }

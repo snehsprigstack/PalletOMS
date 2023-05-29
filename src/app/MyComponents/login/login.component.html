@@ -11,12 +11,12 @@
                         <div class="form-group pt-0">
                             <div class="input-field pt-0">
                                 <label>Email</label><br>
-                                <input formControlName="UserName" type="text" placeholder="Login Id">
+                                <input formControlName="UserId" type="text" placeholder="Login Id">
                                 <i style="float: right;position: relative;bottom: 25px;right: 20px;"
                                     class="fa-regular fa-user"></i>
                             </div>
                             <small style="color: red;position: relative;left: 10px;"
-                                *ngIf="login.controls['UserName'].dirty && login.hasError('required','UserName')">
+                                *ngIf="login.controls['UserId'].dirty && login.hasError('required','UserId')">
                                 *Login Id Required! </small>
                             <div class=" input-field">
                                 <label>Password</label><br>
